@@ -1,0 +1,23 @@
+---
+title: M.E. Kish Music
+tag: "sites"
+image: "/assets/img/logos/MEKLogo.png"
+---
+{% extends "layouts/websites.njk" %}
+
+{% block appImage %}
+  <img src="{{'/assets/img/logos/MEKLogo.png' | url }}" alt="{{title}} Logo">
+{% endblock appImage %}
+
+{% block appDescription %}
+  <p>M.E.'s site is built on the Django framework. As a songwriter, M.E. needed an e-commerce site to sell her sheet music and song books. </p>
+  <p>Django is a great framework for dynamic sites that require a database and offer a great front end user experience.</p>
+  <p></p>
+  <p></p>
+{% endblock %}
+
+{% block appLinks %}
+  <h5>
+    <a role="button" href="https://www.mekishmusic.com" class="web-btn  store-link" target="_blank">mekishmusic.com</a>
+  </h5>
+{% endblock %}

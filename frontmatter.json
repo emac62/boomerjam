@@ -1,0 +1,13 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "project",
+      "path": "[[workspace]]/src/project"
+    }
+  ],
+  "frontMatter.framework.startCommand": "npm start",
+  "frontMatter.preview.host": "http://localhost:8080"
+}

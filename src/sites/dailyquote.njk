@@ -1,0 +1,22 @@
+---
+title: Daily Quote
+---
+{% extends "layouts/websites.njk" %}
+
+{% block appImage %}
+  <img src="{{'/assets/img/logos/DQLogo500.png' | url }}" alt="{{ title }} Logo">
+{% endblock appImage %}
+
+{% block appDescription %}
+
+  <p>An online daily quote guessing game. A bit of a cross between Wheel of Fortune and Wordle.</p>
+  <p>As a new web developer, I was reading about the rise of Wordle and simplicity of the code. A Wordle clone tutorial from <a href="https://www.freecodecamp.org">freeCodeCamp</a> came across my Twitter feed and I was intrigued. I had not taken to JavaScript and only used it when it was necessary. As a Wordle fan, this would be my opportunity to get the basics of Javascript down and have a bit of fun at the same time. I found out JavaScript is not so hard to learn.</p>
+  <p>Working with <a href="https://www.bobbieb.ca">bobbieb</a>, we investigated the possibility of extending the game to solve quotes instead of a single word. bobbieb is the currator of the quotes and I maintain the code. A great partnership!</p>
+  <p>Give it a try!</p>
+{% endblock %}
+
+{% block appLinks %}
+  <h5>
+    <a role="button" href="https://www.dailyquote.ca" class="web-btn  store-link" target="_blank">dailyquote.ca</a>
+  </h5>
+{% endblock %}

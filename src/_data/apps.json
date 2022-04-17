@@ -1,0 +1,32 @@
+{
+  "apps": [
+    {
+      "title": "My Tasks",
+      "tags": "apps",
+      "image": "/assets/img/logos/myTasks512.png",
+      "url": "/apps/my-tasks/",
+      "description": "A simple To Do app for iOS."
+    },
+    {
+      "title": "EduLog",
+      "tags": "apps",
+      "image": "/assets/img/logos/EduLogWeb300.png",
+      "url": "/apps/eduLog/",
+      "description": "Tracks supply and occasional teaching assignments."
+    },
+    {
+      "title": "Scavenger Hunt Bingo",
+      "tags": "apps",
+      "image": "/assets/img/logos/ScHBingoLogo.png",
+      "url": "/apps/bingo/",
+      "description": "A bingo styled game played on your own or with kids."
+    },
+    {
+      "title": "Match This!",
+      "tags": "apps",
+      "image": "/assets/img/logos/matchIcon.png",
+      "url": "/apps/match/",
+      "description": "A picture matching game for 2!"
+    }
+  ]
+}

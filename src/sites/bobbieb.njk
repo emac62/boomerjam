@@ -1,0 +1,23 @@
+---
+title: bobbieb Photos and Words
+---
+
+{% extends "layouts/websites.njk" %}
+
+{% block appImage %}
+  <img src="{{'/assets/img/logos/bbpLogo1024.png' | url }}" alt="{{ title }} Logo">
+{% endblock appImage %}
+
+{% block appDescription %}
+
+  <p>bobbieb's site is built on the Django framework. As a showcase for her photography the site has a databsase of photos grouped into projects and blogs about photograpy, education and life.</p>
+  <p>Django is a great framework for dynamic sites that require a database and offer a great front end user experience.</p>
+  <p></p>
+  <p></p>
+{% endblock %}
+
+{% block appLinks %}
+  <h5>
+    <a role="button" href="https://www.bobbieb.ca" class="web-btn  store-link" target="_blank">bobbieb.ca</a>
+  </h5>
+{% endblock %}

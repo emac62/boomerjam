@@ -1,0 +1,48 @@
+---
+title: Projects
+layout: base.njk
+---
+{% include 'social_rotated.njk' %}
+{% block content %}
+
+  <section class="projects">
+    <div class="projects__bio-image">
+      <h1 class="projects-title">My Projects</h1>
+    </div>
+    <h2 class="text-center mt-3">Mobile Apps</h2>
+    <div class="projects__items">
+
+      {% for app in apps.apps %}
+        <div class="projects__item">
+          <img class="mb-1" src="{{ app.image | url }}" alt="{{ app.title }} Logo">
+          <div class="projects__btns">
+            <a href="{{app.url}}" class="projects__btn">
+              <i class="fas fa-eye"></i>
+              <strong>{{ app.title }}</strong> ~ 
+              {{ app.description }}
+            </a>
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <h2 class="text-center mt-5">Websites</h2>
+    <div class="projects__items">
+
+      {% for site in sites.sites %}
+        <div class="projects__item">
+          <img class="mb-1" src="{{ site.image | url }}" alt="{{ site.data.title }} Logo">
+          <div class="projects__btns">
+            <a href="{{site.url}}" class="projects__btn">
+              <i class="fas fa-eye"></i>
+              <strong>{{ site.title }}</strong> ~ 
+              {{site.description}}
+            </a>
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% include 'social_icons.njk' %}
+  </section>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "base.njk" %}
+
+{% block content %}
+
+  <div class="app-container">
+    <div class="bB-logo">
+      <img src="/assets/img/bBLogo300.png" alt="">
+    </div>
+
+    <div class="about-app">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <!-- Button trigger modal -->
+            <button class="projBtn w-100" data-bs-toggle="modal" data-bs-target="#projectModal">
+              <h3>Projects</h3>
+            </button>
+
+          </div>
+          <!-- Modal -->
+          <div class="modal custom fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3>Project List</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Mobile Apps
+                {% for app in apps.apps %}
+                    <div>
+                      <a href="{{ app.url}}">{{app.title}}</a>
+
+                    </div>
+                  {% endfor %}
+                  <hr>
+                Websites
+                {% for site in sites.sites %}
+                    <div>
+                      <a href="{{ site.url}}">{{site.title}}</a>
+
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 ps-2">
+            <h3>{{ title }}</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 app-img">
+          {% block appImage %}{% endblock appImage %}
+        </div>
+        <div class="col-lg-9">
+          {% block appDescription %}{% endblock %}
+        </div>
+      </div>
+      <div class="get-links">
+        <h5>Visit the website:</h5>
+        {% block appLinks %}{% endblock %}
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}
