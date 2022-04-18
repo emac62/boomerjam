@@ -395,10 +395,10 @@ a {
 
 .projects__btns {
   position: absolute;
-  top: 25%;
+  top: 5%;
   text-align: center;
   padding: 10px;
-  line-height: 125%;
+  line-height: 105%;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -420,7 +420,8 @@ a {
 }
 
 .projects__btn, .fas {
-  font-size: 2rem;
+  font-size: 1.25rem;
+  line-height: 105%;
 }
 
 
@@ -654,6 +655,30 @@ img.logo {
   .projects__items {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .projects__btns {
+    top: 2%;
+    line-height: 50%
+  }
+  .projects__btn, .fas {
+    font-size: 0.5rem;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+
+
+  .projects__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .projects__btn, .fas {
+    font-size: 0.75rem;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -668,17 +693,4 @@ img.logo {
     transform: rotate(90deg) translate(-6rem, -7rem);
   }
 
-}
-
-
-@media screen and (min-width: 769px) {
-
-
-  .projects__items {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .projects__btn, .fas {
-    font-size: 1rem;
-  }
 }

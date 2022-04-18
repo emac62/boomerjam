@@ -29,7 +29,8 @@ picking a canvas color on the settings page.
 {% endblock %}
 
 {% block carousel %}
-  <div id="carouselExampleDark" class="carousel carousel-dark slide ps-5" >
+  <div class="banner-img"><img src="{{'/assets/img/PixGraphic.png' | url }}" alt="Match This Banner"></div>
+  {# <div id="carouselExampleDark" class="carousel carousel-dark slide ps-5" >
     <div class="carousel-indicators pt-3">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -68,7 +69,7 @@ picking a canvas color on the settings page.
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> #}
 {% endblock %}
 
 {% block appLinks %}
