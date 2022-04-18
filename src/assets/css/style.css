@@ -395,10 +395,10 @@ a {
 
 .projects__btns {
   position: absolute;
-  top: 5%;
+  top: 15%;
   text-align: center;
   padding: 10px;
-  line-height: 105%;
+  line-height: 125%;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -420,11 +420,9 @@ a {
 }
 
 .projects__btn, .fas {
-  font-size: 1.25rem;
-  line-height: 105%;
+  font-size: 1rem;
+  line-height: 125%;
 }
-
-
 
 .app-container {
   padding-top: 60px;
@@ -568,7 +566,7 @@ img.logo {
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 425px) {
   .home__name {
     font-size: 1.5rem;
   }
@@ -596,7 +594,7 @@ img.logo {
   }
 
   .about-app {
-    width: 80vw;
+    width: 75vw;
   }
 
   .projects__btn, .fas {
@@ -604,12 +602,35 @@ img.logo {
   }
 
   footer {
-    transform: rotate(90deg) translate(-1rem, -3rem);
+    transform: rotate(90deg) translate(-3rem, -6rem);
+    font-size: x-small;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+
+  }
+  .social-icons a {
+    padding-left: 0.11rem;
   }
 
+  .carousel {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .get-links img {
+    width: 75%;
+  }
+
+  .web-btn {
+    font-size: smaller;
+  }
+  
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .home__name {
     font-size: 1.5rem;
   }
@@ -657,31 +678,23 @@ img.logo {
   }
 
   .projects__btns {
-    top: 2%;
-    line-height: 50%
+    top: 10%;
+    
   }
   .projects__btn, .fas {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
 }
 
 
-
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
 
 
   .projects__items {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .projects__btn, .fas {
-    font-size: 0.75rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
   .app-img img {
     display: block;
     margin: 0 auto;
@@ -689,8 +702,17 @@ img.logo {
     width: auto;
   }
 
+  .projects__btn, .fas {
+    font-size: 0.75rem;
+  }
+
   footer {
     transform: rotate(90deg) translate(-6rem, -7rem);
   }
+}
 
+@media screen and  (min-width: 1201px) {
+  .projects__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
