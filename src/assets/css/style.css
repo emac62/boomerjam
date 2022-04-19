@@ -205,12 +205,23 @@ footer img {
 
 main {
   height: 100vh;
-
 }
 
+.mobile-container, .web-container {
+  width: 80%;
+  display: block;
+  margin: 25px auto;
+  padding: 25px;
+  background-color: var(--grey-color);
+  color: var(--primary-color);
+  border-bottom: 10px solid var(--primary-color);
+  border-radius: 25px;
+}
+
+
+
 .social-icons {
-  font-family: "FontAwesome\ 5 Free";
-  content: "\f099";
+
   position: fixed;
   bottom: 1rem;
   left: 1rem;
