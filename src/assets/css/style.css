@@ -53,6 +53,10 @@ footer {
   color: var(--text-color);
 }
 
+footer img {
+  height: 25px;
+}
+
 
 .menu-btn {
   position: absolute;
@@ -211,7 +215,7 @@ main {
 }
 
 .social-icons a {
-  /* font-size: 1rem; */
+  font-size: 1rem;
   padding: 0.4rem;
   transition: var(--transition-ease);
 }
@@ -452,7 +456,8 @@ a {
   outline: none;
   border: none;
   background: transparent;
-  text-align: left;
+  display: block;
+  margin: 0 auto;
   color: var(--secondary-color);
 }
 
@@ -601,18 +606,14 @@ img.logo {
     font-size: 1rem;
   }
 
-  footer {
-    transform: rotate(90deg) translate(-3rem, -6rem);
-    font-size: x-small;
-  }
+ 
   .social-icons {
-    display: flex;
-    flex-direction: column;
-    font-size: x-small;
-
+    left: 0.5rem;
+    bottom: 0.5rem;
   }
   .social-icons a {
-    padding-left: 0.11rem;
+    padding-left: 0;
+    font-size: x-small;
   }
 
   .carousel {
@@ -626,6 +627,11 @@ img.logo {
 
   .web-btn {
     font-size: smaller;
+  }
+  footer {
+    /* transform: rotate(90deg) translate(-1rem, -3rem); */
+    font-size: x-small;
+    padding: 0.5rem;
   }
   
 }
@@ -669,9 +675,12 @@ img.logo {
     flex-direction: column;
   }
 
-  footer {
-    transform: rotate(90deg) translate(-5rem, -7rem);
-  }
+
+    footer {
+      transform: rotate(90deg) translate(-1rem, -3rem);
+     
+    }
+  
 
   .projects__items {
     grid-template-columns: repeat(2, 1fr);
@@ -698,17 +707,13 @@ img.logo {
   .app-img img {
     display: block;
     margin: 0 auto;
-    height: 150px;
-    width: auto;
+    width: 100%;
   }
 
   .projects__btn, .fas {
     font-size: 0.75rem;
   }
 
-  footer {
-    transform: rotate(90deg) translate(-6rem, -7rem);
-  }
 }
 
 @media screen and  (min-width: 1201px) {

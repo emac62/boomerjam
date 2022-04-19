@@ -1,7 +1,7 @@
 {% extends "base.njk" %}
 
 {% block content %}
-
+  {% include "social_rotated.njk" %}
   <div class="app-container">
     <div class="bB-logo">
       <img src="/assets/img/bBLogo300.png" alt="">
@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-lg-3">
             <!-- Button trigger modal -->
-            <button class="projBtn w-100" data-bs-toggle="modal" data-bs-target="#projectModal">
+            <button class="projBtn" data-bs-toggle="modal" data-bs-target="#projectModal">
               <h3>Projects</h3>
             </button>
 
@@ -51,20 +51,18 @@
 
         </div>
 
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 app-img">
-          {% block appImage %}{% endblock appImage %}
+        <div class="row">
+          <div class="col-lg-3 app-img">
+            {% block appImage %}{% endblock appImage %}
+          </div>
+          <div class="col-lg-9">
+            {% block appDescription %}{% endblock %}
+          </div>
         </div>
-        <div class="col-lg-9">
-          {% block appDescription %}{% endblock %}
+        <div class="carousel">
+          {% block carousel %}{% endblock %}
         </div>
       </div>
-      <div class="carousel">
-        {% block carousel %}{% endblock %}
-      </div>
-
     </div>
     <div class="get-links">
       {% block appLinks %}{% endblock %}
