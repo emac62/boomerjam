@@ -209,6 +209,8 @@ main {
 }
 
 .social-icons {
+  font-family: "FontAwesome\ 5 Free";
+  content: "\f099";
   position: fixed;
   bottom: 1rem;
   left: 1rem;
@@ -606,7 +608,6 @@ img.logo {
     font-size: 1rem;
   }
 
- 
   .social-icons {
     left: 0.5rem;
     bottom: 0.5rem;
