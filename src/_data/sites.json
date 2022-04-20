@@ -4,28 +4,28 @@
       "title": "bobbieb Photos and Words",
       "tags": "sites",
       "url": "/sites/bobbieb/",
-      "image": "/assets/img/logos/bbpLogo1024.png",
+      "image": "/assets/img/logos/bbpLogo1024.webp",
       "description": "A photographer's website"
     },
     {
       "title": "M.E. Kish Music",
       "tags": "sites",
       "url": "/sites/mekish/",
-      "image": "/assets/img/logos/MEKLogo.png",
+      "image": "/assets/img/logos/MEKLogo.webp",
       "description": "An e-commerce website."
     },
     {
       "title": "TPA Advice for Ontario Teachers",
       "tags": "sites",
       "url": "/sites/tpa/",
-      "image": "/assets/img/logos/OntTPA-Logo.png",
+      "image": "/assets/img/logos/OntTPA-Logo.webp",
       "description": "An information website"
     },
     {
       "title": "Daily Quote",
       "tags": "sites",
       "url": "/sites/dailyquote/",
-      "image": "/assets/img/logos/DQLogo500.png",
+      "image": "/assets/img/logos/DQLogo500.webp",
       "description": "An online daily quote guessing game"
     }
   ]

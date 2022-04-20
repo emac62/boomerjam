@@ -10,6 +10,10 @@
 
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,6 +23,7 @@
 @font-face {
   font-family: "FootlightMTProRegular";
   src: url("/assets/fonts/FootlightMTProRegular.otf");
+  font-display: swap;
 }
 
 body {
@@ -31,6 +36,10 @@ body {
   color: var(--text-color);
 }
 
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -40,7 +49,7 @@ header {
 
 .bB-Logo img {
   height: 250px;
-
+  width: auto;
 }
 
 footer {
@@ -55,6 +64,7 @@ footer {
 
 footer img {
   height: 25px;
+  width: auto;
 }
 
 
@@ -270,7 +280,7 @@ a {
   text-align: center;
   background: linear-gradient(to right, rgba(56, 145, 256, 0.6),
       rgba(56, 145, 256, 0.3)),
-    url('/assets/img/sunrise1.png') center bottom;
+    url('/assets/img/sunrise1.webp') center bottom;
   background-size: cover;
 }
 
@@ -301,7 +311,7 @@ a {
   height: 50vh;
   width: 100%;
   background:
-    linear-gradient(to right, rgba(21, 85, 152, 0.6), rgba(21, 85, 152, 0.3)), url('/assets/img/sunrise1.png') center bottom;
+    linear-gradient(to right, rgba(21, 85, 152, 0.6), rgba(21, 85, 152, 0.3)), url('/assets/img/sunrise1.webp') center bottom;
 
   background-size: cover;
   display: flex;
@@ -356,7 +366,7 @@ a {
   height: 50vh;
   width: 100%;
   background:
-    linear-gradient(to right, rgba(21, 85, 152, 0.6), rgba(21, 85, 152, 0.3)), url('/assets/img/sunrise1.png') center bottom;
+    linear-gradient(to right, rgba(21, 85, 152, 0.6), rgba(21, 85, 152, 0.3)), url('/assets/img/sunrise1.webp') center bottom;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -387,6 +397,7 @@ a {
 
 .projects__item img {
   width: 100%;
+  height: auto;
 }
 
 .projects__item::after {
@@ -449,6 +460,7 @@ a {
   margin-top: -50px;
   margin-left: 1rem;
   height: 100px;
+  width: auto;
 }
 
 
@@ -467,20 +479,24 @@ a {
 
 .projBtn {
   outline: none;
-  border: none;
-  background: transparent;
+  border: 2px solid var(--gray-color);
+  border-radius: 10px;
+  background: var(--primary-color);
   display: block;
   margin: 0 auto;
-  color: var(--secondary-color);
+  padding: 5px 10px 0 10px;
+  color: var(--grey-color);
+  font-weight: bold;
 }
 
 .projBtn:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .app-img img {
   padding: 10px;
   width: 100%;
+  height: auto;
 }
 
 .about-app a {
@@ -502,6 +518,7 @@ a {
 
 .banner-img img {
   width: 100%;
+  height: auto;
 }
 
 .get-links {
@@ -591,6 +608,7 @@ img.logo {
 
   .bB-Logo img {
     height: 150px;
+    width: auto;
   }
 
   .contact__email a {
@@ -635,6 +653,7 @@ img.logo {
 
   .get-links img {
     width: 75%;
+    height: auto;
   }
 
   .web-btn {
@@ -655,6 +674,7 @@ img.logo {
 
   .bB-Logo img {
     height: 150px;
+    width: auto;
   }
 
   .contact__email a {
@@ -720,6 +740,7 @@ img.logo {
     display: block;
     margin: 0 auto;
     width: 100%;
+    height: auto;
   }
 
   .projects__btn, .fas {
