@@ -27,6 +27,13 @@
       "image": "/assets/img/logos/matchIcon.webp",
       "url": "/apps/match/",
       "description": "A picture matching game for 2!"
+    },
+    {
+      "title": "Hang 7",
+      "tags": "apps",
+      "image": "/assets/img/logos/Hang7.png",
+      "url": "/apps/hang7/",
+      "description": "A hangman style game with 7 letter words and your underwear!"
     }
   ]
 }
