@@ -14,7 +14,7 @@ layout: base.njk
       <div class="projects__items">
         {% for app in apps.apps %}
           <div class="projects__item">
-            <img class="mb-1" src="{{ app.image | url }}" alt="{{ app.title }} Logo">
+            <img style="border-radius: 10%;" class="mb-1" src="{{ app.image | url }}" alt="{{ app.title }} Logo">
             <div class="projects__btns">
               <a href="{{app.url}}" class="projects__btn">
                 <i class="fas fa-eye"></i>
