@@ -1,0 +1,27 @@
+---
+title: Daily Quote
+description: Guess the quote in 10 letters or less.
+---
+{% extends 'layouts/apps.njk' %}
+
+{% block appImage %}
+  <img style="border-radius: 10%;" src="{{'/assets/img/logos/DQLogo500.webp' | url }}" alt="">
+{% endblock appImage %}
+{% block appDescription %}
+  <p>Guess the quote in 10 letters or less!</p>
+  <p>The Daily Quote web site started as an idea to harness some of the most inspirational quotations known and then turn them into a fun, thought-provoking game. To add to the fun, we often use quotes that parallel world events and celebrations.</p>
+  <p>The app version will also have the same daily version as the web site. In addition, there will be a relaxed version using previous quotes that can be played more than once per day. A challenge version will award points for solving and have the ability to purchae added features with points. </p>
+
+{% endblock %}
+{% block carousel %}
+  <div class="banner-img"><img  src="{{'/assets/img/DailyQuoteHeader.png' | url }}" alt="Daily Quote Banner"></div>
+{% endblock %}
+
+{% block appLinks %}
+  <h5>Coming Soon!</h5>
+  <a href="" target="_blank"
+  rel="noopener noreferrer"><img src="/assets/img/AppStore512.png" alt="Download on the App Store"></a>
+  <a href='' target="_blank"
+  rel="noopener noreferrer"><img alt='Get it on Google Play'
+    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+{% endblock %}

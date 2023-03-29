@@ -1,0 +1,19 @@
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+
+  //checks if hash value exists
+  if (window.location.hash != '') {
+    //removes the initial hash
+    openval = window
+      .location
+      .hash
+      .slice(1);
+
+    //opens the relavant accordion
+    var acc = document.getElementById(openval)
+    acc
+      .classList
+      .add('show');
+
+  }
+</script>

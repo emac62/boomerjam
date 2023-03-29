@@ -34,6 +34,13 @@
       "image": "/assets/img/logos/wpGraphic.png",
       "url": "/apps/hang7/",
       "description": "A hangman style game with 7 letter words and your underwear!"
+    },
+    {
+      "title": "Daily Quote",
+      "tags": "apps",
+      "image": "/assets/img/logos/DQLogo500.png",
+      "url": "/apps/dailyquoteapp/",
+      "description": "A quote guessing game."
     }
   ]
 }
