@@ -41,6 +41,13 @@
       "image": "/assets/img/logos/DQLogo500.png",
       "url": "/apps/dailyquoteapp/",
       "description": "A quote guessing game."
+    },
+    {
+      "title": "Quote in Code",
+      "tags": "apps",
+      "image": "/assets/img/logos/QinCodeLogo1.png",
+      "url": "/apps/code/",
+      "description": "A quote cyptogram word game."
     }
   ]
 }

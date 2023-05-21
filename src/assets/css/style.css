@@ -505,10 +505,14 @@ a {
 }
 
 .about-app a {
-  color: var(--secondary-color);
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .about-app a:hover {
+  background-color: var(--primary-color);
   color: var(--text-color);
 }
 
@@ -635,7 +639,8 @@ img.logo {
   }
 
   .about-app {
-    width: 75vw;
+    width: 80vw;
+    padding: 1rem;
   }
 
   .projects__btn,

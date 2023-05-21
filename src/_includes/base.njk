@@ -1,59 +1,59 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <meta name="author" content="{{ site.authorName }}">
-        <meta name="description" content="{% if description %} {{ description }} {% else %} {{ site.description }} {% endif %}">
-        <link rel="icon" href="{{ site.favicon }}" type="image/png"/>
-        <link rel="preload" href="/assets/fonts/FootlightMTProRegular.otf" as="font" type="font/otf" crossorigin>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="author" content="{{ site.authorName }}">
+    <meta name="description" content="{% if description %} {{ description }} {% else %} {{ site.description }} {% endif %}">
+    <link rel="icon" href="{{ site.favicon }}" type="image/png"/>
+    <link rel="preload" href="/assets/fonts/FootlightMTProRegular.otf" as="font" type="font/otf" crossorigin>
 
-        <script src="https://kit.fontawesome.com/8f3e23e397.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+    <script src="https://kit.fontawesome.com/8f3e23e397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
 
-        <title>borderlineBoomer {% if title %} - {{ title }}
-            {% endif %}
-        </title>
-    </head>
-    <body>
-        <header>
-            <div class="menu-btn">
-                <span class="menu-btn__burger"></span>
-            </div>
+    <title>borderlineBoomer {% if title %} - {{ title }}
+      {% endif %}
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
 
-            <nav class="nav">
-                <ul class="menu-nav" role="list">
-                    {% for item in nav.items %}
-                        <li class="menu-nav__item">
-                            <a href="{{ item.url }}" 
+      <nav class="nav">
+        <ul class="menu-nav" role="list">
+          {% for item in nav.items %}
+            <li class="menu-nav__item">
+              <a href="{{ item.url }}" 
                         {% if item.url === page.url %} aria-current="page" data-state="active" class="menu-nav__link selected" {% else %} class="menu-nav__link" 
                         {% endif %}>{{item.name}}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
+            </li>
+          {% endfor %}
+        </ul>
 
-            </nav>
-        </header>
+      </nav>
+    </header>
 
-        <main>
-            {{ content | safe }}
-            {% block content %}
-                {% block appImage %}{% endblock appImage %}
-                {% block appDescription %}{% endblock %}
-                {% block carousel %}{% endblock %}
-                {% block appLinks %}{% endblock %}
-                {% block appTerms %}{% endblock %}
-                {% block appPrivacy %}{% endblock %}
-            {% endblock %}
+    <main>
+      {{ content | safe }}
+      {% block content %}
+        {% block appImage %}{% endblock appImage %}
+        {% block appDescription %}{% endblock %}
+        {% block carousel %}{% endblock %}
+        {% block appLinks %}{% endblock %}
+        {% block appTerms %}{% endblock %}
+        {% block appPrivacy %}{% endblock %}
+      {% endblock %}
 
-        </main>
-        {% include "social_icons.njk" %}
-        <footer>&copy; 2023 <img src={{"/assets/img/bBLogoRound-50.png" | url}} alt="borderlineBoomer Logo"></footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </main>
 
-        <script src="{{ '/assets/js/main.js' | url }}"></script>
-    </body>
+    <footer>&copy; 2023 <img src={{"/assets/img/bBLogoRound-50.png" | url}} alt="borderlineBoomer Logo"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="{{ '/assets/js/main.js' | url }}"></script>
+  </body>
 </html>
