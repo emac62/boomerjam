@@ -13,41 +13,41 @@ layout: "base.njk"
       <h2>borderlineboomer@gmail.com
       </h2>
       <button class="btn web-btn" onclick="openMail()">
-        <i class="fas fa-envelope"></i> Email</button>
+        <img height="20px" src="/assets/img/email.png" alt=""></i> Email</button>
 
-      <!-- Button trigger modal -->
-      <button type="button" class="btn web-btn" data-bs-toggle="modal" data-bs-target="#emailModal">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn web-btn" data-bs-toggle="modal" data-bs-target="#emailModal">
        ?
       </button>
 
-      <!-- Modal -->
-      <div class="modal custom fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3>Email link not working?</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>Check the default email reader in your email app settings. Sometimes it is set to a web browser instead of your prefered email app.</p>
-              <p>Alternatively, open your email app, copy and paste my email address into 'to' field.</p>
-              <p>Thanks for checking this out!</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn web-btn" data-bs-dismiss="modal">Close</button>
+    <!-- Modal -->
+    <div class="modal custom fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Email link not working?</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Check the default email reader in your email app settings. Sometimes it is set to a web browser instead of your prefered email app.</p>
+            <p>Alternatively, open your email app, copy and paste my email address into 'to' field.</p>
+            <p>Thanks for checking this out!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn web-btn" data-bs-dismiss="modal">Close</button>
 
-            </div>
           </div>
         </div>
       </div>
-
     </div>
 
-  </section>
-  <script >
+  </div>
 
-    function openMail() {
-      var email = "borderlineboomer@gmail.com";
-      location.href = "mailto:" + email;
-    }
-  </script>
+</section>
+<script >
+
+  function openMail() {
+    var email = "borderlineboomer@gmail.com";
+    location.href = "mailto:" + email;
+  }
+</script>

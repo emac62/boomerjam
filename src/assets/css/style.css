@@ -1,7 +1,7 @@
 :root {
   --transition-ease: all 0.5s ease-in-out;
-  --primary-color: rgb(21, 85, 152);
-  --background-color: rgb(56, 145, 246);
+  --primary-color: #155598;
+  --background-color: #3891f6;
   --secondary-color: #e69720;
   --text-color: #dec9a4;
   --black-color: #1d1d1d;
@@ -231,22 +231,6 @@ main {
 
 
 
-.social-icons {
-
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-}
-
-.social-icons a {
-  font-size: 1rem;
-  padding: 0.4rem;
-  transition: var(--transition-ease);
-}
-
-.social-icons a:hover {
-  color: var(--secondary-color)
-}
 
 .project-nav-list li {
   padding: 10px;
@@ -444,7 +428,8 @@ a {
 }
 
 .projects__btn:hover {
-  color: var(--text-color);
+  color: var(--primary-color);
+  transition: var(--transition-ease);
 }
 
 .projects__desc:hover {
@@ -648,15 +633,6 @@ img.logo {
     font-size: 1rem;
   }
 
-  .social-icons {
-    left: 0.5rem;
-    bottom: 0.5rem;
-  }
-
-  .social-icons a {
-    padding-left: 0;
-    font-size: x-small;
-  }
 
   .carousel {
     width: 90%;
@@ -715,10 +691,6 @@ img.logo {
     width: auto;
   }
 
-  .social-icons {
-    display: flex;
-    flex-direction: column;
-  }
 
 
   footer {
@@ -736,10 +708,6 @@ img.logo {
 
   }
 
-  .projects__btn,
-  .fas {
-    font-size: 0.8rem;
-  }
 
 }
 
@@ -758,10 +726,6 @@ img.logo {
     height: auto;
   }
 
-  .projects__btn,
-  .fas {
-    font-size: 0.75rem;
-  }
 
 }
 
